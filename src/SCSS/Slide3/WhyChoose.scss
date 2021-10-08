@@ -1,0 +1,83 @@
+.whyChooseContainer {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whyChooseInstruct {
+  height: 20%;
+  width: 90%;
+  text-align: end;
+}
+
+.whyChooseInstructHead {
+  // float: right;
+}
+
+.whyChooseInstructinfo {
+  // float: right;
+  color: rgba(255, 0, 0, 0.726);
+}
+
+.whyChooseinstructios {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .whyChooseImage {
+    width: 65%;
+    height: 100%;
+
+    .whyChooseImageImg {
+      height: 85%;
+      width: 100%;
+      margin-left: 2rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-origin: center;
+      background-image: url(../../Img/Slide3/companyBikeParking.png);
+    }
+
+    .whyChooseImageText{
+        text-align: right;
+        margin-right: 5rem;
+        border-bottom: 2px solid red;
+    }
+  }
+  .dataCoontainer {
+    width: 40%;
+    margin-top: 25px;
+
+    .information {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding : 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.658);
+
+      .informationImg {
+        width: 6rem;
+        height: 3rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-origin: center;
+        margin-right: 17px;
+      }
+
+      .halmentImg {
+        background-image: url(../../Img/Slide3/helmet.png);
+      }
+      .priceImg {
+        background-image: url(../../Img/Slide3/zero.png);
+      }
+      .OfferImg {
+        background-image: url(../../Img/Slide3/offer.png);
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+
+
+.howItWorkContainer{
+    background-color: red;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    *{
+        border-radius: 100px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.howItWorkRow{
+    *{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

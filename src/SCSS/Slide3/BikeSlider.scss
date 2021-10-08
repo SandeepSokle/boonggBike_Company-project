@@ -1,0 +1,69 @@
+r {
+  color: red;
+}
+
+.bikeSliderContanier {
+  height: 60vh;
+  width: 100vh;
+  border-top: 1px solid rgba(0, 0, 0, 0.719);
+  margin-bottom: 5.4rem;
+}
+
+.bikeSliderText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.bikeSliderImage {
+  .Img {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: center;
+    padding: 10px;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+    background-position: center;
+  }
+  .firstImage {
+    background-image: url(../../Img/Slide3/cruuiser.png);
+  }
+  .secondImage {
+    background-image: url(../../Img/Slide3/scoter.png);
+  }
+  .thirdImage {
+    background-image: url(../../Img/Slide3/standard.png);
+  }
+}
+
+.textitems{
+  position: relative;
+  bottom: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.sliderWindow{
+  
+  position: absolute;
+  h4{
+    float:left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+  }
+  p{
+    float:left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+  }
+}

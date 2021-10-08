@@ -1,0 +1,21 @@
+
+.featureContainer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .featureHeader{
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .featureData{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+}

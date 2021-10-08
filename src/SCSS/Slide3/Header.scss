@@ -1,0 +1,104 @@
+.slides {
+  width: 100vw;
+  height: 90vh;
+}
+
+.slides * {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide1 {
+    border-bottom-right-radius: 10vh;
+  background-image: url(../../Img/Slide3/slideImage1.jpg);
+}
+
+.slide2 {
+    border-bottom-right-radius: 10vh;
+    background-image: url(../../Img/Slide3/slideImage2.jpg);
+}
+
+.slide3 {
+  background-image: url(../../Img/Slide3/slideImage3.jpg);
+  border-bottom-right-radius: 10vh;
+}
+
+.contantContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerHead,
+.headerExperience {
+  margin-top: 5px;
+  max-height: max-content;
+  height: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.headerHead {
+  font-size: 2rem;
+  color: white;
+}
+
+.headerExperience {
+  margin-top: 10px;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.slide3HeaderIcon {
+  margin-top: 3rem;
+  width: 22rem;
+  height: 10rem;
+  opacity: 1;
+  z-index: 12;
+  background-image: url(../../Img/boongg-white-logo-full-new.png);
+}
+
+.headerInputFrame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerInput {
+  width: 70vw;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  padding: 26px;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.headerInput * {
+  width: 14vw;
+}
+
+.headerInput label {
+  width: 5%;
+}
+
+.rentBikeText {
+  height: 2.8rem;
+  width: 20rem;
+  color: red;
+  background-color: white;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
