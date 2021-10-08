@@ -9,7 +9,7 @@
   background-position: center;
   // background-color: black;
   backface-visibility: 2;
-  background-image: url("../../Img/Slide3/slideImage2.jpg");
+  background-image: url(../../Img/HomeImg/slideImage2.jpg);
 }
 .feedContantContainer{
   display: flex;
@@ -30,5 +30,6 @@
 
 .feedName{
   font-size: 26px;
+  text-shadow: 0px 0px 10px 2px  black;
   font-weight: bolder;
 }

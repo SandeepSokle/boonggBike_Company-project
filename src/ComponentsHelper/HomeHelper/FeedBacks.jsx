@@ -1,7 +1,7 @@
 
 
 
-import "../SCSS/Slide3/FeedBacks.scss";
+import "../../SCSS/HomeScss/FeedBacks.scss";
 
 
 export const FeedBack = () => {

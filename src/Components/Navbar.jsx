@@ -1,4 +1,4 @@
-import "./CSS/Navbar.scss";
+import "../SCSS/Navbar.scss";
 import "material-icons/iconfont/material-icons.css";
 import { useState } from "react";
 let Navbar = () => {

@@ -2,11 +2,12 @@
 
 
 
-import lbb from "../Img/Slide3/lbb.png";
-import vccircle from "../Img/Slide3/vccircle.png";
-import bex from "../Img/Slide3/businessex.jpg";
-import what from "../Img/Slide3/whatshot.jpg";
-import "../SCSS/Slide3/Feature.scss";
+import lbb from "../../Img/HomeImg/lbb.png";
+import vccircle from "../../Img/HomeImg/vccircle.png";
+import bex from "../../Img/HomeImg/businessex.jpg";
+import what from "../../Img/HomeImg/whatshot.jpg";
+import "../../SCSS/HomeScss/Feature.scss";
+
 export const Feature = ()=>{
     return (
         <div className = "featureContainer container">

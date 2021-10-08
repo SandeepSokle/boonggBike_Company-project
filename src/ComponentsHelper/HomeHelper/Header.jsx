@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../SCSS/Slide3/Header.scss";
+import "../../SCSS/HomeScss/Header.scss";
 import React from "react"
 
 export const Header = () => {

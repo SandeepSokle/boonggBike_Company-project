@@ -1,4 +1,4 @@
-import Image from "../Img/boongg-white-logo-full-new.png";
+import Image from "../../Img/boongg-white-logo-full-new.png";
 
 export const Footer3 = () => {
   return (

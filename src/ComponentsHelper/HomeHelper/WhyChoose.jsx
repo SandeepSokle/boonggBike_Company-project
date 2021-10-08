@@ -2,7 +2,7 @@
 
 
 import React from "react";
-import "../SCSS/Slide3/WhyChoose.scss";
+import "../../SCSS/HomeScss/WhyChoose.scss";
 
 export const WhyChoose = () => {
   return (

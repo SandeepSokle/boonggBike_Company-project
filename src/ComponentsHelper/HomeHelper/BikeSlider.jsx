@@ -1,4 +1,4 @@
-import "../SCSS/Slide3/BikeSlider.scss";
+import "../../SCSS/HomeScss/BikeSlider.scss";
 
 export const BikeSlider = () => {
   return (

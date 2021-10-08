@@ -3,7 +3,7 @@
 
 
 
-import "../SCSS/Slide3/AtGlance.scss";
+import "../../SCSS/HomeScss/AtGlance.scss";
 export const AtGlance = () => {
   return (
     <div className="container AtGlanceContainer">

@@ -1,8 +1,8 @@
-import "../SCSS/Slide3/HowItWorks.scss";
-import dateLogo from "../Img/Slide3/chooseDate.svg";
-import bikeLogo from "../Img/Slide3/chooseBike.svg";
-import locationLogo from "../Img/Slide3/chooseLocation.svg";
-import tripLogo from "../Img/Slide3/chooseTrip.svg";
+import "../../SCSS/HomeScss/HowItWorks.scss";
+import dateLogo from "../../Img/HomeImg/chooseDate.svg";
+import bikeLogo from "../../Img/HomeImg/chooseBike.svg";
+import locationLogo from "../../Img/HomeImg/chooseLocation.svg";
+import tripLogo from "../../Img/HomeImg/chooseTrip.svg";
 export const HowItWorks = () => {
   return (
     <div class="howItWorkContainer ">

@@ -2,8 +2,8 @@
 
 
 
-import Image from "../Img/Slide3/grow.jpg";
-import "../SCSS/Slide3/GrowBusiness.scss";
+import Image from "../../Img/HomeImg/grow.jpg";
+import "../../SCSS/HomeScss/GrowBusiness.scss";
 export const GrowBusiness = () => {
   return (
     <div className="GrowBusinessContainer">

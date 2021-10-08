@@ -1,5 +1,5 @@
-import Image from "../Img/Slide3/contact.png";
-import "../SCSS/Slide3/AnyQuery.scss";
+import Image from "../../Img/HomeImg/contact.png";
+import "../../SCSS/HomeScss/AnyQuery.scss";
 
 export const AnyQuery = () => {
   return (
