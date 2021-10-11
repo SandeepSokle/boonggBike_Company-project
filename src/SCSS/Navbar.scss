@@ -31,13 +31,9 @@
   background-image: url(../Img/boongg-white-logo.jpg);
 }
 
-.loginBtn{
+.loginBtn1{
   font-size: 1.2rem;
-  margin-right: 5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin-right: 5rem; 
   padding: 10px;
   border-radius: 15%;
   /* border: 2px solid; */
@@ -48,58 +44,20 @@
 }
 
 
-@media only screen and (min-width: 240px) {
-  .icon {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    background-image: url(../Img/mobileLogo.png);
-  }
-  
-  .loginBtn{   
-    margin-right: 1rem;
-  }
-
+@media only screen and (max-width: 1024px) {
  
+  .navInput{
+    display: none;
+  }
+
 }
 
-@media only screen and (min-width: 700px) {
-  .icon {
-    margin-left: 1rem;
-    background-image: url(../Img/mobileLogo.png);
-  }
-  
-  .loginBtn{   
-    margin-right: 1rem;
-  }
+@media only screen and (max-width: 768px) {
  
-}
+  .loginBtn1{
+  padding: 0px;
+  margin-right: 0; 
+  display: block;
+  }
 
-@media only screen and (min-width: 740px) {
-  .icon {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    background-image: url(../Img/boongg-white-logo.jpg);
-  }
-  
-  .loginBtn{   
-    margin-right: 2rem;
-  }
-}
-
-@media only screen and (min-width: 940px) {
-  .icon {
-    margin-top: 0.5rem;
-  }
-  
-}
-
-@media only screen and (min-width: 1440px) {
-  .icon {
-    margin-left: 5rem;
-    background-image: url(../Img/boongg-white-logo.jpg);
-  }
-  
-  .loginBtn{   
-    margin-right: 5rem;
-  }
 }

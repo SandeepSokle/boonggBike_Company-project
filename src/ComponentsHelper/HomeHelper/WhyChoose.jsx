@@ -1,23 +1,29 @@
-
-
-
 import React from "react";
 import "../../SCSS/HomeScss/WhyChoose.scss";
-
+import Image from "../../Img/HomeImg/companyBikeParking.png";
 export const WhyChoose = () => {
   return (
     <div className="whyChooseContainer">
       <div className="whyChooseInstruct">
-        <h3 className = "whyChooseInstructHead">WHY CHOOSE US?</h3>
-        <h6 className = "whyChooseInstructinfo">
+        <h3 className="whyChooseInstructHead">WHY CHOOSE US?</h3>
+        <h6 className="whyChooseInstructinfo">
           We simplified bike rentals, so you can focus on what's important to
           you.
         </h6>
       </div>
       <div className="whyChooseinstructios">
         <div className="whyChooseImage">
-          <div className="whyChooseImageImg"></div>
-          <h4 className = "whyChooseImageText">We Santize Bike After Every Ride..!!</h4>
+          <img
+            src={Image}
+            alt="image"
+            className="whyChooseImageImg"
+            srcset=""
+            width="400px"
+            height="350px"
+          />
+          <h4 className="whyChooseImageText">
+            We Santize Bike After Every Ride..!!
+          </h4>
         </div>
         <div className="dataCoontainer">
           <div className="information">

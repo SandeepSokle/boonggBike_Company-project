@@ -1,9 +1,10 @@
 .whyChooseContainer {
-  height: 80vh;
+  // height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .whyChooseInstruct {
@@ -12,12 +13,7 @@
   text-align: end;
 }
 
-.whyChooseInstructHead {
-  // float: right;
-}
-
 .whyChooseInstructinfo {
-  // float: right;
   color: rgba(255, 0, 0, 0.726);
 }
 
@@ -33,18 +29,15 @@
 
     .whyChooseImageImg {
       height: 85%;
-      width: 100%;
+      width: 90%;
       margin-left: 2rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-origin: center;
-      background-image: url(../../Img/HomeImg/companyBikeParking.png);
     }
 
-    .whyChooseImageText{
-        text-align: right;
-        margin-right: 5rem;
-        border-bottom: 2px solid red;
+    .whyChooseImageText {
+      text-align: right;
+      margin-right: 5rem;
+      margin-top: -1rem;
+      border-bottom: 2px solid red;
     }
   }
   .dataCoontainer {
@@ -56,7 +49,7 @@
       flex-direction: row;
       align-items: center;
       margin-bottom: 2rem;
-      padding : 10px;
+      padding: 10px;
       border-radius: 5px;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.658);
 
@@ -80,4 +73,123 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: 1030px) {
+  .whyChooseinstructios {
+    .whyChooseImage {
+      width: 55%;
+      height: 100%;
+
+      .whyChooseImageImg {
+        margin: 0;
+        margin-top: 4rem;
+        height: 85%;
+        width: 100%;
+      }
+
+      .whyChooseImageText {
+        width: 100%;
+        margin: 0;
+        margin-top: -0;
+      }
+    }
+    .dataCoontainer {
+      width: 40%;
+      margin-top: 25px;
+
+      .information {
+        margin-bottom: 1rem;
+
+        .informationTextContaner {
+          h4 {
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+          h6 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .whyChooseinstructios {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .whyChooseImage {
+      width: 100%;
+      // height: 100%;
+
+      .whyChooseImageImg {
+        margin-top: 0;
+      }
+
+      .whyChooseImageText {
+        font-size: 1.5rem;
+      }
+    }
+    .dataCoontainer {
+      width: 80%;
+
+      .information {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .whyChooseinstructios {
+    .whyChooseImage {
+      .whyChooseImageImg {
+        margin: 0;
+      }
+
+      .whyChooseImageText {
+        width: 100%;
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+    .dataCoontainer {
+      width: 90%;
+      .information {
+        .informationTextContaner {
+          h4 {
+            font-size: 1rem;
+          }
+          h6 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  
+}
+
+@media only screen and (max-width: 380px) {
+  .whyChooseInstruct {
+    .whyChooseInstructHead {
+      font-size: 1rem;
+    }
+    .whyChooseInstructinfo {
+      font-size: 0.8rem;
+    }
+  }
+
+  .whyChooseContainer {
+    margin-left: 1.3rem;
+  }
+
+  .dataCoontainer {
+    width: 95%;
+  }
+ 
+ 
 }

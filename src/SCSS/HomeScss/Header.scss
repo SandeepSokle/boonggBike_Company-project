@@ -12,18 +12,24 @@
 }
 
 .slide1 {
-    border-bottom-right-radius: 10vh;
+  // border-bottom-right-radius: 10vh;
+  box-shadow: none;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   background-image: url(../../Img/HomeImg/slideImage1.jpg);
 }
 
 .slide2 {
-    border-bottom-right-radius: 10vh;
-    background-image: url(../../Img/HomeImg/slideImage2.jpg);
+  box-shadow: none;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  // border-bottom-right-radius: 10vh;
+  background-image: url(../../Img/HomeImg/slideImage2.jpg);
 }
 
 .slide3 {
+  box-shadow: none;
   background-image: url(../../Img/HomeImg/slideImage3.jpg);
-  border-bottom-right-radius: 10vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  // border-bottom-right-radius: 10vh;
 }
 
 .contantContainer {
@@ -32,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .headerHead,
@@ -56,11 +63,18 @@
 
 .slide3HeaderIcon {
   margin-top: 3rem;
-  width: 22rem;
-  height: 10rem;
+  width: 18rem;
+  height: 20rem;
   opacity: 1;
   z-index: 12;
   background-image: url(../../Img/boongg-white-logo-full-new.png);
+}
+
+.material-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
 }
 
 .headerInputFrame {
@@ -72,7 +86,7 @@
 
 .headerInput {
   width: 70vw;
-  height: 6rem;
+  height: auto;
   display: flex;
   flex-direction: row;
   padding: 26px;
@@ -80,11 +94,17 @@
 }
 
 .headerInput * {
-  width: 14vw;
+  width: 20%;
 }
-
+.headerLocationInner{
+  display: flex;
+  flex-direction: row;
+}
+.headerLocationInner input {
+  width: 100%;
+}
 .headerInput label {
-  width: 5%;
+  width: max-content;
 }
 
 .rentBikeText {
@@ -101,4 +121,189 @@
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
+}
+
+@media only screen and (max-width: 770px) {
+  .headerInputFrame {
+    .headerInput {
+      justify-content: center;
+      width: 70vw;
+      height: auto;
+
+      button {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .headerInput * {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      height: 28px;
+
+      label {
+        width: min-content;
+      }
+    }
+  }
+  .headerHead,
+  .headerExperience {
+    margin-top: 4px;
+    height: 1.5rem;
+  }
+  .headerHead {
+    font-size: 1.5rem;
+  }
+
+  .headerExperience {
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  .slide3HeaderIcon {
+    width: 14rem;
+    height: 11rem;
+  }
+
+  .rentBikeText {
+    padding: 0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .7rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 430px) {
+  
+  .headerInputFrame {
+    .headerInput {
+      justify-content: center;
+      width: 70vw;
+      height: auto;
+
+      button {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .headerInput * {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      height: 2rem;
+      margin-bottom: 4px;
+
+    
+    }
+  }
+
+  .headerHead,
+  .headerExperience {
+    margin-top: 4px;
+    height: 1.5rem;
+  }
+  .headerHead {
+    font-size: 1.1rem;
+  }
+
+  .headerExperience {
+    margin-top: 1px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: black;
+  }
+
+  .slide3HeaderIcon {
+    width: 11rem;
+    height: 8rem;
+  }
+
+  .rentBikeText {
+    height: 2.8rem;
+    width: 14rem;
+    padding: 0.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: .7rem;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  
+  .headerInputFrame {
+    .headerInput {
+     
+      button {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+   
+  }
+
+  .rentBikeText {
+    height: 2.8rem;
+    width: 12rem;
+    padding: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    font-size: 15px;
+  }
+
+  .headerContainer{
+    width: 120vw;
+    margin-left: 15px;
+  }
+  .slide1 {
+    // border-bottom-right-radius: 10vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
+  }
+  
+}
+
+
+@media only screen and (max-width: 325px) {
+  
+  .headerInputFrame {
+    .headerInput {
+     
+      button {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+   
+  }
+
+  .rentBikeText {
+    height: 2.8rem;
+    width: 11rem;
+    padding: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .4rem;
+    font-size: 13px;
+  }
+
+  .headerContainer{
+    margin-left: 20px;
+  }
+  .slide1 {
+    // border-bottom-right-radius: 10vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 0% 100%);
+  }
 }
