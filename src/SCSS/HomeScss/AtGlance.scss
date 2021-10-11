@@ -30,6 +30,56 @@
     .GlanceText{
       color: red;
       font-size: 20px;
+      text-align: center;
     }
   }
 
+
+  @media only screen and (max-width: 770px) {
+    .header {
+      font-size: 2.3rem;
+      
+    }
+  }
+
+
+  @media only screen and (max-width: 430px) {
+    .header {
+      font-size: 1.8rem; 
+    }
+
+    .GlanceContent {
+      .GlanceNumver {
+        font-size: 2rem;
+        
+        margin-bottom: .6rem;
+      }
+      .GlanceText{
+        font-size:15px;
+      }
+    }
+    .AtGlanceContainer{
+      margin-left: 1.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .header {
+      font-size: 1.5rem; 
+    }
+
+    .GlanceContent {
+      .GlanceNumver {
+        font-size: 1.2rem;
+        
+        margin-bottom: .4rem;
+      }
+      .GlanceText{
+        font-size:13px;
+      }
+    }
+
+    .AtGlanceContainer{
+      margin-left: 2rem;
+    }
+  }

@@ -9,15 +9,15 @@ export const HowItWorks = () => {
       <div className="howItWorkContainerInner">
         <div class="row justify-content-md-center">
           <div class="col-12">
-            <h2>HOW IT WORKS?</h2>
-            <p>
+            <h2 className="howWorkHeader">HOW IT WORKS?</h2>
+            <p className="howWorkIntro">
               We simplified bike rentals, so you can focus on what's important
               to you.
             </p>
           </div>
         </div>
         <div class="row howItWorkRow">
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div className="image">
               <img src={dateLogo} class="img-thumbnail" alt="..." />
             </div>
@@ -26,7 +26,7 @@ export const HowItWorks = () => {
               want
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div className="image">
               <img src={bikeLogo} class="img-thumbnail" alt="..." />
             </div>
@@ -35,7 +35,7 @@ export const HowItWorks = () => {
               to take.
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div className="image">
               <img src={locationLogo} class="img-thumbnail" alt="..." />
             </div>
@@ -43,7 +43,7 @@ export const HowItWorks = () => {
               Get suited up and head to the pick- up location to get your ride.
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div className="image">
               <img src={tripLogo} class="img-thumbnail" alt="..." />
             </div>
