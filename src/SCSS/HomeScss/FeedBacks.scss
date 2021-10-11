@@ -1,6 +1,4 @@
-
-
-.feedBackContainer{
+.feedBackContainer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
@@ -11,7 +9,7 @@
   backface-visibility: 2;
   background-image: url(../../Img/HomeImg/slideImage2.jpg);
 }
-.feedContantContainer{
+.feedContantContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -19,7 +17,7 @@
   color: white;
 }
 
-.feedContant{
+.feedContant {
   font-size: 21px;
   background-color: rgba(0, 0, 0, 0.521);
   padding: 1.5rem;
@@ -28,9 +26,32 @@
   opacity: 1;
 }
 
-.feedName{
+.feedName {
   text-shadow: 0px 0px 10px 2px white;
   font-size: 26px;
   font-weight: bolder;
   color: red;
+}
+
+@media only screen and (max-width: 1023px) {
+  .col-xs-0.col-lg-4{
+    display: none;
+  }
+  .col-xs-0.col-lg-4.col-md-6 {
+    display: block;
+  }
+  
+}
+
+@media only screen and (max-width: 765px) {
+  .col-xs-0.col-lg-4{
+    display: none;
+  }
+  .col-xs-0.col-lg-4.col-md-6 {
+    display: none;
+  }
+  .col-xs-12.col-md-6.col-lg-4{
+    display: block;
+  }
+  
 }

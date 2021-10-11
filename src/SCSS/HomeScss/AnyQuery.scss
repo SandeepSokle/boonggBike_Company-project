@@ -5,11 +5,10 @@
   margin-bottom: 2rem;
   height: 60vh;
 
-
-  .queryImage{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .queryImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .contant {
     display: flex;
@@ -38,21 +37,18 @@
 
     height: max-content;
   }
+  .anyQueryContainer{
+      margin-left: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 380px) {
- 
-.anyQueryContainer {
-      margin-left: 1.5rem;
-    
+  .anyQueryContainer {
+    margin-left: 1.5rem;
+
     .contant {
-      
-  
-   
-  
       .queryContact {
         font-size: 2rem;
-       
       }
     }
   }

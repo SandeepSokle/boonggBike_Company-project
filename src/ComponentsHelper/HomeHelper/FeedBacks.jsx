@@ -1,4 +1,4 @@
-
+ 
 
 
 import "../../SCSS/HomeScss/FeedBacks.scss";
@@ -15,7 +15,7 @@ export const FeedBack = () => {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div className="row feedContantContainer">
-              <div className="col-3">
+              <div className=" col-xs-12 col-md-6  col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Fugiat libero dolores, quidem aut eligendi repellendus!
@@ -24,7 +24,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Ankit Purkar</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0 col-md-6  col-lg-4">
                 <div className="feedContant">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat tenetur magnam fuga excepturi consequuntur
@@ -35,7 +35,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Murli krishna L</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0  col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                   alias recusandae culpa nihil dignissimos unde cum voluptates
@@ -49,7 +49,7 @@ export const FeedBack = () => {
           </div>
           <div class="carousel-item">
             <div className="row feedContantContainer">
-              <div className="col-3">
+              <div className="col-xs-12 col-md-6 col-lg-4">
                 <div className="feedContant">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat tenetur magnam fuga excepturi consequuntur
@@ -60,7 +60,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Murli krishna L</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0 col-md-6 col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                   alias recusandae culpa nihil dignissimos unde cum voluptates
@@ -70,7 +70,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Shindhe Vishal</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0 col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                   alias recusandae culpa nihil dignissimos unde cum voluptates
@@ -84,7 +84,7 @@ export const FeedBack = () => {
           </div>
           <div class="carousel-item">
             <div className="row feedContantContainer">
-              <div className="col-3">
+              <div className="col-xs-12 col-md-6 col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                   alias recusandae culpa nihil dignissimos unde cum voluptates
@@ -94,7 +94,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Shindhe Vishal</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0 col-md-6 col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                   alias recusandae culpa nihil dignissimos unde cum voluptates
@@ -104,7 +104,7 @@ export const FeedBack = () => {
                 </div>
                 <div className="feedName">Nohil thakur</div>
               </div>
-              <div className="col-3">
+              <div className="col-xs-0 col-lg-4">
                 <div className="feedContant">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
                   dolor dignissimos voluptatem hic exercitationem autem

@@ -57,17 +57,12 @@
   margin-bottom: 2rem;
   padding: 2rem;
   border-bottom: 2px solid white;
-  width: 100vw;
+ 
   .footer3InnerContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    
 
     .footer3inner {
-      width: 20%;
-      text-align: left;
+      text-align: center;
     }
     .footerIcon {
       text-align: center;
@@ -89,12 +84,15 @@
   margin-bottom: 2rem;
   width: 100%;
   .footerSocialIcons {
-    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
   }
-  .footerSocialIcons * {
-    width: 25%;
-  }
+  
+}
+
+
+@media only screen and (max-width: 1030) {
+  
 }
