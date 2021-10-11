@@ -11,13 +11,13 @@ let Navbar = () => {
   };
 
   return (
-    <nav class="navbar navbarContainer fixed-top">
+    <nav class="navbarContainer fixed-top">
       <div class="container-fluid inner_nav d-flex justify-content-between row">
         <a class="navbar-brand icon col-3" href="#">
           {" "}
         </a>
         
-        <div class="collapse navbar-collapse col-8" id="navbarScroll">
+        {/* <div class="collapse navbar-collapse col-8" id="navbarScroll">
           <li class="row">
             <div class="input-group navInput col-md-2">
               <input
@@ -57,7 +57,7 @@ let Navbar = () => {
               </button>
             </div>
           </li>
-        </div>
+        </div> */}
         <button type="button" class="btn btn-success loginBtn1 col-1">
           Login
         </button>
