@@ -7,9 +7,6 @@
   background: #f43d4b;
 }
 
-
-
-
 .inner_nav {
   display: flex;
   flex-direction: row;
@@ -20,24 +17,13 @@
   padding: 10px;
 }
 
-.iconContainer{
+.iconContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-  
-  .icon {
-    background-size: contain;
-    width: 15%;
-    height: 80%;
-    left: 10%;
-    top: 5%;
-    z-index: 12;
-    
-    background-repeat: no-repeat;
-    background-image: url(../Img/boongg-white-logo.jpg);
-  }
+
 
 .navbarInputContainer {
   // border: 2px black solid;
@@ -104,10 +90,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  .menuListItem {
+    position: absolute;
+    top: 2rem;
+    left: -4rem;
+    width: 12rem;
+    padding: 10px;
+    background: rgb(237, 228, 228);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    * {
+      width: 90%;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    *:hover {
+      background-color: rgba(0, 0, 0, 0.494);
+      color: rgb(233, 208, 208);
+    }
+  }
 
   .loginBtn1 {
     font-size: 1.2rem;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 13;
     padding: 10px;
     border-radius: 15%;
@@ -119,16 +134,44 @@
   }
 }
 
+.navbarMenuBtn {
+  width: 3rem !important;
+  height: 2rem !important;
+  background: none;
+}
+
 @media only screen and (max-width: 1024px) {
-  .navInput {
-    display: none;
+  .loginBtn1 {
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 3rem;
+    width: 6rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .loginBtn1 {
-    padding: 0px;
-    margin-right: 0;
-    display: block;
+@media only screen and (max-width: 770px) {
+  .navbarContainer{
+    position: fixed;
   }
+
+  .iconContainer{
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+ 
+
+  .iconContainer,.loginBtn1,.navbarMenuBtn{
+    margin-top: -1rem;
+  }
+
+  .menuListItem {
+  
+    top: 1.2rem!important;
+    left: -5rem!important;
+    
+  }
+
 }
