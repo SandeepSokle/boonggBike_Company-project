@@ -6,7 +6,7 @@ r {
   height: 60vh;
   width: 100vh;
   border-top: 1px solid rgba(0, 0, 0, 0.719);
-  margin-bottom: 5.4rem;
+  // margin-bottom: 2rem;
 }
 
 .bikeSliderText {
@@ -17,14 +17,18 @@ r {
 }
 
 .bikeSliderImage {
+  height: 66vh;
+  width: 100%;
+  padding-top: -2rem;
   .Img {
+    // margin-top: -2rem;
     display: flex;
+    height: 50vh;
+    width: 80%;
     align-items: center;
     margin-left: 20px;
     justify-content: center;
     padding: 10px;
-    height: 60vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     backface-visibility: hidden;
@@ -43,7 +47,7 @@ r {
 
 .textitems{
   position: relative;
-  bottom: -2rem;
+  bottom: -1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

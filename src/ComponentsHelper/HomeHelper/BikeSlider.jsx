@@ -13,7 +13,7 @@ export const BikeSlider = () => {
           class="carousel slide bikeSliderImage"
           data-bs-ride="carousel"
         >
-         <div class="carousel-inner sliderWindow">
+          <div class="carousel-inner sliderWindow">
             <div class="carousel-item active innerItems">
               <div className="firstImage Img"></div>
               <div class="carousel-caption d-none d-md-block">
