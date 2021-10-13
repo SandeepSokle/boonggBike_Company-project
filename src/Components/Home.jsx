@@ -10,10 +10,14 @@ import { AnyQuery } from "../ComponentsHelper/HomeHelper/AnyQuery"
 import { FeedBack } from "../ComponentsHelper/HomeHelper/FeedBacks"
 import { Feature } from "../ComponentsHelper/HomeHelper/Feature"
 import { Footer } from "../ComponentsHelper/HomeHelper/Footer"
+import { Login } from "./Login"
 
 
-let Home = ()=>{
+let Home = (props)=>{
     return <div className = "homeContainer">
+
+        {props.showLoginModal ? <Login/> : ""}
+
         <Header/>
         <WhyChoose/>
         <BikeSlider/>

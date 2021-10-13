@@ -1,0 +1,53 @@
+
+
+
+
+.loginContainer{
+    position: fixed;
+    display: flex;
+    top: 15.5vh;
+    left: 15vw;
+    width: 70vw;
+    height: 80vh;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 2px;
+    background-color: white;
+    z-index: 35;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginBtns{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.LoginBtns *{
+    margin-bottom: 1rem;
+}
+
+.loginWithGoogle{
+    background-color: white;
+    color: red;
+}
+
+.loginWithGoogle:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.loginWithFb{
+    background-color: white;
+    color: blue;
+}
+
+.loginWithFb:hover{
+    background-color: blue;
+    color: white;
+}

@@ -4,12 +4,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import imageIcon from "../Img/boongg-white-logo.jpg";
 import imageIconMobile from "../Img/mobileLogo.png";
+import { Login } from "./Login";
 
-let Navbar = () => {
+let Navbar = (props) => {
   var [location, setLocation] = useState("pune");
   var [scrollVal, setScrollVal] = useState(0);
   var [windowWidth, setWindowWidth] = useState();
-  var [showLogin, setShowLogin] = useState(false);
   var [showSearch, setShowSearch] = useState(false);
   var [showMenuItems, setShowMenuItems] = useState(false);
 
@@ -130,7 +130,13 @@ let Navbar = () => {
               menu
             </span>
           ) : (
-            <button type="button" class="btn btn-success loginBtn1 opacity-100">
+            <button type="button" class="btn btn-success loginBtn1 opacity-100" onClick = {()=>{
+              if(props.showLoginModal){
+                props.setShowLoginModal(false)
+              }else{
+                props.setShowLoginModal(true)
+              }  
+            }} >
               Login
             </button>
           )}
