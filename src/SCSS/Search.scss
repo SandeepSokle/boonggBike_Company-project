@@ -1,0 +1,25 @@
+.searchContainer {
+  margin-top: 15vh;
+  height: 85vh;
+}
+
+.topContainer {
+  height: 7vh;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .topContainerItems {
+    height: 5vh;
+  }
+  .searchCurrency * {
+    height: 100%;
+  }
+  .searchCurrency {
+    height: 5vh;
+    width: 5vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+}

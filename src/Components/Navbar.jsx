@@ -1,16 +1,18 @@
+
+
 import "../SCSS/Navbar.scss";
 import "material-icons/iconfont/material-icons.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import imageIcon from "../Img/boongg-white-logo.jpg";
 import imageIconMobile from "../Img/mobileLogo.png";
-import { Login } from "./Login";
+import { useLocation } from "react-router";
 
 let Navbar = (props) => {
   var [location, setLocation] = useState("pune");
   var [scrollVal, setScrollVal] = useState(0);
   var [windowWidth, setWindowWidth] = useState();
-  var [showSearch, setShowSearch] = useState(false);
+  var [currentLocation, setCurrentLocation] = useState(false);
   var [showMenuItems, setShowMenuItems] = useState(false);
 
   var onSuccess = (position) => {
@@ -19,28 +21,35 @@ let Navbar = (props) => {
     setLocation("" + lat + lng);
   };
 
-  useEffect(() => {
-    console.log(window.innerWidth);
-    setWindowWidth(window.innerWidth);
 
+  var location = useLocation();
+
+  
+  useEffect(() => {
+    // console.log(window.innerWidth);
+    setWindowWidth(window.innerWidth);
+    setCurrentLocation(location.pathname);
+    
+    
     window.addEventListener("scroll", (e) => {
       setScrollVal(window.scrollY);
       setShowMenuItems(false);
     });
-
+    
     return () => {
       window.removeEventListener("scroll", () => {
         console.log("remove Event");
       });
     };
   }, []);
-
+  
+  console.log(currentLocation);
   return (
     <nav
       class={`navbarContainer fixed-top ${
-        scrollVal == 0
+        scrollVal == 0 && currentLocation !== "/search"
           ? "opacity-0"
-          : scrollVal < 120
+          : scrollVal < 120 && currentLocation !== "/search"
           ? "opacity-50"
           : "opacity-100"
       }`}
@@ -54,14 +63,10 @@ let Navbar = (props) => {
           ) : (
             <img src={imageIcon} alt="" srcset="" className="icon" />
           )}
-
         </div>
 
         {windowWidth < 1024 ? (
-
-          
           <div className="col-1 col-sm-5"></div>
-
         ) : (
           <div
             className={`col-7 navbarInputContainer row navbarLocation  ${
@@ -130,13 +135,17 @@ let Navbar = (props) => {
               menu
             </span>
           ) : (
-            <button type="button" class="btn btn-success loginBtn1 opacity-100" onClick = {()=>{
-              if(props.showLoginModal){
-                props.setShowLoginModal(false)
-              }else{
-                props.setShowLoginModal(true)
-              }  
-            }} >
+            <button
+              type="button"
+              class="btn btn-success loginBtn1 opacity-100"
+              onClick={() => {
+                if (props.showLoginModal) {
+                  props.setShowLoginModal(false);
+                } else {
+                  props.setShowLoginModal(true);
+                }
+              }}
+            >
               Login
             </button>
           )}

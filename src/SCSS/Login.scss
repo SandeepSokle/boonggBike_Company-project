@@ -17,6 +17,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    overflow: auto;
+
+    h1{
+        margin-top: 3rem;
+    }
+
 }
 
 .LoginBtns{
@@ -51,3 +58,47 @@
     background-color: blue;
     color: white;
 }
+
+h1{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 770px) {
+ 
+    .loginContainer{
+       
+        top: 17.5vh;
+        left: 17vw;
+       
+       
+    }
+   
+  
+  }
+
+
+  @media only screen and (max-width: 430px) {
+ 
+    .loginContainer{
+       
+        top: 17.5vh;
+        left: 18vw;
+       
+    }
+   
+  
+  }
+
+  @media only screen and (max-width: 380px) {
+ 
+    .loginContainer{
+       
+        top: 22.5vh;
+        left: 20vw;
+    width: 90vw;
+       
+    }
+   
+  
+  }
