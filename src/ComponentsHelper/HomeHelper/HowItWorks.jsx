@@ -1,3 +1,8 @@
+
+
+
+
+
 import "../../SCSS/HomeScss/HowItWorks.scss";
 import dateLogo from "../../Img/HomeImg/chooseDate.svg";
 import bikeLogo from "../../Img/HomeImg/chooseBike.svg";

@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 import "../../SCSS/HomeScss/WhyChoose.scss";
 import Image from "../../Img/HomeImg/companyBikeParking.png";
