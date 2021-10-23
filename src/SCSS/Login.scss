@@ -1,5 +1,10 @@
 
-
+.loginContainerLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}
 
 
 .loginContainer{
@@ -21,9 +26,15 @@
     overflow: auto;
 
     h1{
-        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(29, 23, 23, 0.645);
     }
 
+}
+
+.loginSubmitBtn{
+    width: 8rem;
 }
 
 .LoginBtns{
@@ -62,6 +73,7 @@
 h1{
     text-align: center;
 }
+
 
 
 @media only screen and (max-width: 770px) {

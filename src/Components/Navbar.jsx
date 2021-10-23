@@ -1,5 +1,3 @@
-
-
 import "../SCSS/Navbar.scss";
 import "material-icons/iconfont/material-icons.css";
 import { useEffect } from "react";
@@ -7,6 +5,7 @@ import { useState } from "react";
 import imageIcon from "../Img/boongg-white-logo.jpg";
 import imageIconMobile from "../Img/mobileLogo.png";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 let Navbar = (props) => {
   var [location, setLocation] = useState("pune");
@@ -21,29 +20,26 @@ let Navbar = (props) => {
     setLocation("" + lat + lng);
   };
 
-
   var location = useLocation();
 
-  
   useEffect(() => {
     // console.log(window.innerWidth);
     setWindowWidth(window.innerWidth);
     setCurrentLocation(location.pathname);
-    
-    
+
     window.addEventListener("scroll", (e) => {
       setScrollVal(window.scrollY);
       setShowMenuItems(false);
     });
-    
+
     return () => {
       window.removeEventListener("scroll", () => {
         console.log("remove Event");
       });
     };
   }, []);
-  
-  console.log(currentLocation);
+
+  // console.log(currentLocation);
   return (
     <nav
       class={`navbarContainer fixed-top ${
@@ -103,9 +99,11 @@ let Navbar = (props) => {
               />
             </div>
             <div className="col-2">
-              <button type="button" className="navbarRentBtn">
-                Rent Now
-              </button>
+              <Link to="./search">
+                <button type="button" className="navbarRentBtn">
+                  Rent Now
+                </button>
+              </Link>
             </div>
           </div>
         )}
@@ -128,7 +126,7 @@ let Navbar = (props) => {
                 menuList.classList.add("menuListItem");
                 menuList.innerHTML = `<div className="menuLoginBtn">Login</div>
               <div className="menuSearchBtn">Search</div>`;
-                console.log(e.target.parentNode);
+                // console.log(e.target.parentNode);
                 e.target.parentNode.appendChild(menuList);
               }}
             >
@@ -138,7 +136,8 @@ let Navbar = (props) => {
             <button
               type="button"
               class="btn btn-success loginBtn1 opacity-100"
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
                 if (props.showLoginModal) {
                   props.setShowLoginModal(false);
                 } else {
